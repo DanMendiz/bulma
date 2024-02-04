@@ -4,18 +4,72 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hello Bulma!</title>
+    <!-- bulma styles -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
+    <!-- our styles -->
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
+    <div>
+      <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="#">Bulma</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Components</a></li>
+          <li class="is-active">
+            <a href="#" aria-current="page">Breadcrumb</a>
+          </li>
+        </ul>
+        <div class="dropdown is-hoverable">
+          <div class="dropdown-trigger">
+            <button
+              class="button"
+              aria-haspopup="true"
+              aria-controls="dropdown-menu4"
+            >
+              <span>Hover me</span>
+              <span class="icon is-small">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu d-1" id="dropdown-menu4" role="menu">
+            <div class="dropdown-content">
+              <div class="dropdown-item">
+                <!-- <p>
+                  You can insert <strong>any type of content</strong> within the
+                  dropdown menu.
+                </p> -->
+              </div>
+              <div class="menu-items m-1">
+                <a
+                  href="https://www.whoscored.com/Players/326413/Show/Kai-Havertz"
+                  class="button is-info is-large"
+                  >havertz sdfsdfsdf eeeeeeeeeeeeeee</a
+                >
+              </div>
+              <!-- <div class="menu-items m-1">
+                <a
+                  href="https://arseblog.news/2024/02/play-every-single-ball-arteta-wants-arsenal-fans-to-make-life-difficult-for-liverpool/"
+                  ><p>arsenal news</p></a
+                >
+              </div>
+              <div class="menu-items m-2"></div> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
     <section class="section">
       <div class="container">
         <h1 class="title">Hello World</h1>
         <p class="subtitle">My first website with <strong>Bulma</strong>!</p>
         <span class="icon">
-          <i class="fas fa-home"><img src="/icons/wifi.png" alt=""></i>
+          <i class="fas fa-home"><img src="/icons/wifi.png" alt="" /></i>
         </span>
 
         <progress class="progress is-small" value="20" max="100">20%</progress>
