@@ -3,8 +3,10 @@
 } */
 
 .m-1 {
-  width: 100px;
-  /* border: 1px black solid; */
+
 }
 
-
+/* rule override */
+.progress.is-small {
+  height: 1rem;
+}
