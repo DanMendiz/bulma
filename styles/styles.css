@@ -3,10 +3,46 @@
 } */
 
 .m-1 {
-
 }
 
 /* rule override */
 .progress.is-small {
   height: 1rem;
+}
+
+.section {
+  height: 100vh;
+}
+
+/* open props? */
+.container-2 {
+  height: 100vh;
+  border: 1px red solid;
+  background-color: var(--blue-1);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.child {
+  /* height: 20rem;
+  width: 20rem; */
+  border: 1px red solid;
+
+
+  grid-column-start: 2;
+  /* grid-column-end: 1; */
+  grid-row-start: 2;
+  /* grid-row-end: span 2; */
+}
+
+button.blue {
+  color: var(--blue-6);
+  background-color: var(--blue-0);
+  border: 1px solid var(--blue-1);
+  text-shadow: 0 1px 0 var(--blue-2);
+
+  &:hover {
+    background-color: var(--blue-1);
+  }
 }
